@@ -314,7 +314,7 @@ p {
   font-size: 40px;
 }
 #progressbar,  #scrollPath {
-  display: none;
+  visibility: hidden;
 }
 
 @media (max-width: 980px) {
@@ -327,6 +327,7 @@ p {
     width: 0;
   }
   #scrollPath {
+    visibility: visible;
     display: block;
     position: fixed;
     top: 0;
@@ -337,6 +338,7 @@ p {
     z-index: 5;
   }
   #progressbar {
+    visibility: visible;
     display: block;
     position: fixed;
     top: 0;
