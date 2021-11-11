@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@300;400;500;600;700;800&family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+
+:root {
+  --main-bg-color: lightblue;
+  --left-side-backgroung: rgb(6, 26, 53);
+  --right-side-backgroung: #fff;
+  --contacts-icons-color: #03a9f4;
+  --mait-text-color: #333;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  background: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.conteiner {
+  position: relative;
+  width: 100%;
+  max-width: 980px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.3);
+}
+
+.conteiner .left-side {
+  position: relative;
+  background: var(--left-side-backgroung);
+  padding: 40px;
+}
+
+.left-side figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.left-side figure img {
+  position: relative;
+  height: 200px;
+  border-radius: 222px;
+}
+
+.left-side figcaption {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.4em;
+}
+.left-side figcaption span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contact-info {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  position: relative;
+}
+.contact-info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contact-info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: var(--contacts-icons-color);
+  cursor: default;
+}
+
+.contact-info ul li span,
+.contact-info ul li span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-info .education li {
+  margin-bottom: 15px;
+}
+
+.contact-info .education h5 {
+  color: var(--contacts-icons-color);
+  font-weight: 500;
+  cursor: default;
+}
+.education a {
+  color: #fff;
+  font-weight: 300;
+  text-decoration: none;
+}
+.contact-info .education .degree {
+  color: #fff;
+  font-weight: 500;
+  cursor: default;
+}
+
+.contact-info .languages .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #081921;
+  display: block;
+  margin-top: 5px;
+}
+.contact-info span {
+  cursor: default;
+}
+.percent .english {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.percent .ukrainian {
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.percent .russian {
+  width: 98%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+
+.conteiner .right-side {
+  position: relative;
+  background: var(--right-side-backgroung);
+  padding: 100px 40px 40px 40px;
+}
+
+.about {
+  margin-bottom: 70px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.about-title {
+  color: var(--left-side-backgroung);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--mait-text-color);
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year-company {
+  min-width: 300px;
+}
+
+.about .box .year-company h5 {
+  text-transform: uppercase;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  color: #848c99;
+  font-weight: 500;
+}
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+}
+
+.skills .box .percent .html {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .css {
+  width: 75%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .vanillajs {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .typescript {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .angular {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .nestjs {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.skills .box .percent .photoshop {
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  transition: 7s;
+}
+
+.interests ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interests ul li {
+  list-style: none;
+  color: #333;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interests ul li .fas {
+  color: #03a9f4;
+  font-size: 40px;
+}
+
+@media (max-width: 980px) {
+  .conteiner {
+    position: relative;
+    margin: 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+  #scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 5;
+  }
+  #progressbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    z-index: 5;
+    animation: animate 5s linear infinite;
+  }
+  @keyframes animate {
+    0%,
+    100% {
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  #progressbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(10px);
+  }
+  #progressbar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    filter: blur(30px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .conteiner {
+    transition: 2s;
+  }
+
+  .conteiner:hover {
+    transform: scale(1.1);
+    transition: 2s;
+  }
+}
